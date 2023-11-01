@@ -1,0 +1,106 @@
+/* navbar */
+nav {
+    background-color: #64b5f6;
+}
+/* The hero image */
+.hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), ;
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* Slide Show  */
+
+.img-slideshow {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.content-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Toggle */
+/* Light Mode */
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+/* container gif  */
+#gifContainer {
+    display: none;
+}
+
+.gifContainer {
+    position: fixed;
+    z-index: 1;
+}
+
+.top-right {
+    top: 50px;
+    right: 50px;
+}
+
+.bottom-right {
+    bottom: 50px;
+    right: 50px;
+
+}
+
+.bottom-left {
+    bottom: 50px;
+    left: 50px;
+}
+
+/* card */
+.card-image {
+    width: 285px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* locked session  */
+
+.lock {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.lockform{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cover{
+    display: none;
+    margin: 0 350px;
+}

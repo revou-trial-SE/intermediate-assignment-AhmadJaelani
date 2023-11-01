@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Bootsrap/bootsrap.css" rel="stylesheet">
+    <title>31 oktober 2023</title>
+    <script src="Bootsrap/bootstrap.min.js"></script>
+</head>
+
+
+<header>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img id="logo" src="gambar/Bootstrap_logo.svg.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            <span id="navText">Bootstrap</span>
+          </a>
+        </div>
+      </nav>
+
+</header>
+
+
+<!-- Body -->
+
+<body>
+
+    <!-- Hero image -->
+
+    <div class="hero-image content-image">
+        <img class="img-slideshow" src="gambar/slide1.jpg" />
+        <img class="img-slideshow" src="gambar/slide2.jpg" />
+        <img class="img-slideshow" src="gambar/slide3.webp" />
+        <div class="hero-text">
+            <h1>Random Site</h1>
+            <p>A Random Internet Site!, Or Is it?</p>
+            <input onclick="change()" type="button" value="Don't you dare!" id="myButton1"></input>
+            <audio id="audioPlayer" src="gambar/Spooky Scary Skeleton.mp3" preload="auto"></audio>
+        </div>
+    </div>
+
+    <!-- Card  -->
+    <div style="display: flex; flex-direction: row; justify-content: center; margin: 50px;">
+        <div class="card" style="width: 18rem; margin: 0 50px 0 50px;">
+            <div>
+                <img class="card-image" id="catImage" src="gambar/cat1.jpg" alt="Default Image">
+                <div class="card-body">
+                    <p style="height: 100px;" id="catcardText" class="card-text">Click the button Bellow to get some
+                        random facts about cat.</p>
+                    <a id="catButton" class="btn btn-primary">Random Cat facts</a>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 286px;">
+            <img class="card-image" id="funImage" src="gambar/fun1.jpg" alt="Default Image">
+            <div class="card-body">
+                <p style="height: 100px;" id="funText" class="card-text">Click the button Bellow to get some random
+                    facts about FUN just FUN.</p>
+                <a id="funButton" class="btn btn-primary">Random Fun Facts</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem; margin: 0 50px 0 50px;">
+            <img id="vegImage" src="gambar/veg1.jpg" class="card-image" alt="Default Image">
+            <div class="card-body">
+                <p style="height: 100px;" id="vegText" class="card-text">Click the button Bellow to get some random
+                    facts about BEEAANN, i mean Veggies!.</p>
+                <a id="vegButton" class="btn btn-primary">Random Vegetable Facts</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- disturbing facts section  -->
+    <div class="lock" style="margin: 100px 0;">
+        <div id="coverContent" class="lockform">
+            <p>This is the DISTURBING RANDOM FACTS! Ready?</p>
+            <button class="d-grid gap-2" id="continueButton">Continue</button>
+        </div>
+        <div id="revealedContent" class="cover">
+            <p>Prepare for the Worst!.</p>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Almost 46 million people trapped in slavery with North Korea, India key offenders: Global
+                            index
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Almost 46 million people are living as slaves globally with the greatest number in India but
+                            the highest prevalence of slavery in North Korea, according to the third Global Slavery
+                            Index released on Tuesday.
+
+                            The index, by Australia-based human rights group Walk Free Foundation, increased its
+                            estimate of people born into servitude, trafficked for sex work, or trapped in debt bondage
+                            or forced labor to 45.8 million from 35.8 million in 2014.
+
+                            Andrew Forrest, founder of Walk Free, said the rise of nearly 30 percent was due to better
+                            data collection, although he feared the situation was getting worse with global displacement
+                            and migration increasing vulnerability to all forms of slavery.
+
+                            Incidences of slavery were found in all 167 countries in the index, with India home to the
+                            largest total number with an estimated 18.4 million slaves among its 1.3 billion population.
+
+                            But North Korea ranked as worst in terms of concentration with one in every 20 people - or
+                            4.4 percent of its 25 million population - in slavery and its government doing the least to
+                            end this with reports of state-sanctioned forced labor.
+                            <a
+                                href="https://www.cnbc.com/2016/05/30/almost-46-million-people-trapped-in-slavery-with-north-korea-india-key-offenders-global-index.html#:~:text=Almost%2046%20million%20people%20are,Slavery%20Index%20released%20on%20Tuesday.">link
+                                article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            It used to be believed that babies as old as 15 months couldn't feel pain
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            As a result, doctors would preform surgery without anesthesia. Doctors used muscle relaxants
+                            on the infants to prevent squirming, essentially paralyzing the babies for the duration of
+                            the procedure. How long ago was this? Reports indicate that this continued up until the
+                            1980's.
+
+                            Edit: Here's a few sources.
+
+                            <a
+                                href="https://www.nytimes.com/1987/12/17/opinion/l-why-infant-surgery-without-anesthesia-went-unchallenged-832387.html">Source
+                                1</a>
+
+                            <a
+                                href="https://www.washingtonpost.com/archive/lifestyle/wellness/1986/08/13/surgery-without-anesthesia-can-preemies-feel-pain/54d32183-8eed-49a8-9066-9dc7cf0afa82/">Source
+                                2</a>
+
+                            <a
+                                href="https://www.bostonglobe.com/ideas/2017/07/28/when-babies-felt-pain/Lhk2OKonfR4m3TaNjJWV7M/story.html">Source
+                                3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Approxmately 2100 children are reported missing every day in the US, or 1 every 41 seconds.
+                            On the bright side, most will be returned unharmed.
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Every 40 seconds, a child goes missing or is abducted in the United States. Approximately
+                            840,000 children are reported missing each year and the F.B.I. estimates that between 85 and
+                            90 percent of these are children. While most reports of missing or abducted children are
+                            resolved within hours, many involve situations where a child goes missing permanently or for
+                            an extended period of time. The following are some of the key issues surrounding missing and
+                            abducted children.
+                            <a
+                                href="https://childsafety.losangelescriminallawyer.pro/missing-and-abducted-children.html">Source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Refrigerators are magnetic because kids used to die inside them. Before 1956, refrigerators
+                            could only be opened from the outside.
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            According to Buzzfeed, back in the day so many children were climbing into refrigerators,
+                            getting stuck inside, and suffocating to death that the government passed the Refrigerator
+                            Safety Act in 1956. Until then, refrigerators could only be opened from an outside latch and
+                            were lined with an airtight rubber seal, making it harder for parents to hear their children
+                            calling for help. Talk about scary.
+
+                            The new act required manufacturers to make fridge doors openable "easily from the inside."
+                            So most companies switched to a magnetic mechanism that allowed doors to stay closed when
+                            you wanted them to, but open from the inside with a little push. Interesting side note: To
+                            help develop door standards, scientists from the American Academy of Pediatrics even studied
+                            the effects of being trapped inside a fridge-like atmosphere on kids.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            there are 8 nukes that are missing all around the world
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            On January 17, 1966, at around 10:30am, a Spanish shrimp fisherman watched a misshapen white
+                            parcel fall from the sky… and silently glide towards the Alboran Sea. It had something
+                            hanging beneath it, though he couldn't make out what it was. Then it slipped beneath the
+                            waves.
+
+                            At the same time, in the nearby fishing village of Palomares, locals looked up at an
+                            identical sky and witnessed a very different scene - two giant fireballs, hurtling towards
+                            them. Within seconds, the sleepy rural idyll was shattered. Buildings shook. Shrapnel sliced
+                            towards the ground. Body parts fell to the earth.
+
+
+                            A few weeks later, Philip Meyers received a message via a teleprinter - a device that could
+                            send and receive primitive emails. At the time, he was working as a bomb disposal officer at
+                            the Naval Air Facility Sigonella, in eastern Sicily. He was told that there was a top secret
+                            emergency in Spain, and that he must report there within days.
+
+                            <a
+                                href="https://www.bbc.com/future/article/20220804-the-lost-nuclear-bombs-that-no-one-can-find">source</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Cows kill more people than sharks every year
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            You've seen "Jaws." You know sharks can be deadly. But in reality, they don't kill very many
+                            people each year.
+
+                            There are approximately five deaths caused by sharks annually, while horses kill about 20
+                            people a year and cows kill about 22. Crocodiles gobble up 1,000 people a year. By spreading
+                            malaria, mosquitos kill hundreds of thousands more people than sharks do every year. Deer
+                            also cause hundreds of deaths, mostly by running out in front of cars.
+                            <a
+                                href="https://childsafety.losangelescriminallawyer.pro/missing-and-abducted-children.html">Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- gif  -->
+    <div id="gifContainer">
+        <div class="gifContainer bottom-right">
+            <img id="gif" src="gambar/dancing-spooky.gif" alt="Floating GIF 1">
+        </div>
+        <div class="gifContainer top-right">
+            <img id="gif2" src="gambar/skeleton-dance.gif" alt="Floating GIF 2">
+        </div>
+        <div class="gifContainer bottom-left">
+            <img id="gif3" src="gambar/spooky-scary.gif" alt="Floating GIF 3">
+        </div>
+    </div>
+</body>
+
+<!-- footer  -->
+
+    <div class="container">
+        Thanks for the visit hope u have fun :D <hr>
+        Regard: Merklich <hr>
+        This is my last energy i dont even want to style this last thing -.-
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+          </ul>
+        </footer>
+      </div>
+
+<!-- java scrip -->
+
+<script src="js/script.js"></script>
+
+</html>
