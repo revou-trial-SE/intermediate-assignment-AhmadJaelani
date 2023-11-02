@@ -16,12 +16,13 @@
 
     <nav class="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img id="logo" src="gambar/Bootstrap_logo.svg.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            <span id="navText">Bootstrap</span>
-          </a>
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="gambar/Bootstrap_logo.svg.png" alt="Logo" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                <span id="navText">Bootstrap</span>
+            </a>
         </div>
-      </nav>
+    </nav>
 
 </header>
 
@@ -45,43 +46,58 @@
     </div>
 
     <!-- Card  -->
-    <div style="display: flex; flex-direction: row; justify-content: center; margin: 50px;">
-        <div class="card" style="width: 18rem; margin: 0 50px 0 50px;">
-            <div>
-                <img class="card-image" id="catImage" src="gambar/cat1.jpg" alt="Default Image">
-                <div class="card-body">
-                    <p style="height: 100px;" id="catcardText" class="card-text">Click the button Bellow to get some
-                        random facts about cat.</p>
-                    <a id="catButton" class="btn btn-primary">Random Cat facts</a>
+    <div class="container" style="margin-top: 50px;">
+        <div class="card-main row row-cols-1 row-cols-md-2 row-cols-lg-4">
+            <div class="card-body col box2 p-2">
+                <div class="card" style="width: 18rem;">
+                    <img id="catImage" src="gambar/cat1.jpg" class="card-image-top box1" alt="Default Image">
+                    <div class="card-body">
+                        <p style="height: 100px;" id="catText" class="card-text">Click the button Bellow to get some
+                            random
+                            facts about cat!.</p>
+                        <a id="catButton" class="btn btn-primary" style="margin-top: 15px;">Random Cat Facts</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card" style="width: 286px;">
-            <img class="card-image" id="funImage" src="gambar/fun1.jpg" alt="Default Image">
-            <div class="card-body">
-                <p style="height: 100px;" id="funText" class="card-text">Click the button Bellow to get some random
-                    facts about FUN just FUN.</p>
-                <a id="funButton" class="btn btn-primary">Random Fun Facts</a>
+            <div class="card-body col box2 p-2">
+                <div class="card" style="width: 18rem;">
+                    <img id="funImage" src="gambar/fun1.jpg" class="card-image-top box1" alt="Default Image">
+                    <div class="card-body">
+                        <p style="height: 100px;" id="funText" class="card-text">Click the button Bellow to get some
+                            random
+                            facts about Fun!.</p>
+                        <a id="funButton" class="btn btn-primary" style="margin-top: 15px;">Random Funny? Facts?</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="card" style="width: 18rem; margin: 0 50px 0 50px;">
-            <img id="vegImage" src="gambar/veg1.jpg" class="card-image" alt="Default Image">
-            <div class="card-body">
-                <p style="height: 100px;" id="vegText" class="card-text">Click the button Bellow to get some random
-                    facts about BEEAANN, i mean Veggies!.</p>
-                <a id="vegButton" class="btn btn-primary">Random Vegetable Facts</a>
+            <div class="card-body col box2 p-2">
+                <div class="card" style="width: 18rem;">
+                    <img id="vegImage" src="gambar/veg1.jpg" class="card-image-top box1" alt="Default Image">
+                    <div class="card-body">
+                        <p style="height: 100px;" id="vegText" class="card-text">Click the button Bellow to get some
+                            random
+                            facts about BEEAANN, i mean Veggies!.</p>
+                        <a id="vegButton" class="btn btn-primary" style="margin-top: 15px;">Random Vegetable Facts</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body col box2 p-2">
+                <div class="card" id="card-container"
+                    style="width: 18rem; height: 400px; justify-content: center; align-items: center;">
+                    <!-- Dynamic cards will be inserted here -->
+                </div>
             </div>
         </div>
     </div>
 
     <!-- disturbing facts section  -->
-    <div class="lock" style="margin: 100px 0;">
+    <div class="lock col" style="margin: 100px 0;">
         <div id="coverContent" class="lockform">
             <p>This is the DISTURBING RANDOM FACTS! Ready?</p>
             <button class="d-grid gap-2" id="continueButton">Continue</button>
         </div>
         <div id="revealedContent" class="cover">
-            <p>Prepare for the Worst!.</p>
+            <p style="text-align: center;">Prepare for the Worst!.</p>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -269,26 +285,31 @@
 
 <!-- footer  -->
 
-    <div class="container">
-        Thanks for the visit hope u have fun :D <hr>
-        Regard: Merklich <hr>
-        This is my last energy i dont even want to style this last thing -.-
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
-      
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-      
-          <ul class="nav col-md-4 justify-content-end">
+<div class="container">
+    Thanks for the visit hope u have fun :D
+    <hr>
+    Regard: Merklich
+    <hr>
+    This is my last energy i dont even want to style this last thing -.-
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
+
+        <a href="/"
+            class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-          </ul>
-        </footer>
-      </div>
+        </ul>
+    </footer>
+</div>
 
 <!-- java scrip -->
 

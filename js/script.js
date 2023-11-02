@@ -31,8 +31,7 @@ setInterval(function () {
 
 // button 
 
-function change()
-{
+function change() {
     var elem = document.getElementById("myButton1");
     if (elem.value == "Don't you dare!") elem.value = "Told You!";
     else elem.value = "Don't you dare!";
@@ -115,7 +114,7 @@ toggleButton.addEventListener("click", () => {
             gifContainer.style.display = "none";
             audioPlayer.pause();
             toggleButton.textContent = "Don't you dare!";
-        }, 25000);
+        }, 22000);
     }
     isPlaying = !isPlaying;
     isGifPlaying = !isGifPlaying;
@@ -123,7 +122,7 @@ toggleButton.addEventListener("click", () => {
 });
 
 // card cat
-const catText = document.getElementById("catcardText");
+const catText = document.getElementById("catText");
 const catImage = document.getElementById("catImage");
 const catButton = document.getElementById("catButton");
 
@@ -230,6 +229,71 @@ vegButton.addEventListener("click", () => {
     vegText.textContent = contentOptions3[currentIndex3].text;
     vegImage.src = contentOptions3[currentIndex3].image;
 });
+
+// riddle card 
+
+const riddles = [{
+        title: "What is light as a feather, but becomes harder to keep the longer you hold it?",
+        text: "This is the first riddle. Click 'Show Answer' to reveal the answer.",
+        answer: "A secret? yeah u wish, its a fart!"
+    },
+    {
+        title: "I am always coming , but i never arrive. What am I ?",
+        text: "This is the second riddle. Click 'Show Answer' to reveal the answer.",
+        answer: "Tomorrow."
+    },
+    {
+        title: "Tread on the living, they make not a mumble. Tread on the dead, they mutter and grumble.",
+        text: "This is the third riddle. Click 'Show Answer' to reveal the answer.",
+        answer: "Leaves."
+    },
+    {
+        title: "The maker doesn't want it. The buyer doesn't use it. The user doesn't know it.",
+        text: "This is the third riddle. Click 'Show Answer' to reveal the answer.",
+        answer: "A Coffin."
+    }
+];
+
+let currentRiddleIndex = 0;
+
+function createRiddleCard() {
+    const cardContainer = document.getElementById("card-container");
+    const riddle = riddles[currentRiddleIndex];
+
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+    <div class="card" style="height: 400px; width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title" id="ridtext">${riddle.title}</h5>
+                        <p style="height: 100px;" class="card-text" id="ridans">${riddle.text}</p>
+                        </div>
+                    <div class="card-footer" style="padding-bottom: 10px;">
+                        <a id="ridansbut" class="btn btn-primary" onclick="revealAnswer()">Show Answer</a>
+                        <a id="nextridbut" class="btn btn-primary" onclick="nextRiddle()">Next Riddle</a>
+                    </div>
+                </div>
+            
+`;
+
+    cardContainer.innerHTML = ""; // Clear the container
+    cardContainer.appendChild(card);
+}
+
+function revealAnswer() {
+    const riddleText = document.getElementById("ridans");
+    const riddle = riddles[currentRiddleIndex];
+    riddleText.textContent = riddle.answer;
+}
+
+function nextRiddle() {
+    currentRiddleIndex = (currentRiddleIndex + 1) % riddles.length;
+    createRiddleCard();
+}
+
+// Initial card creation
+createRiddleCard();
+
 
 // locked section 
 
